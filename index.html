@@ -6,8 +6,8 @@
         </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/style.css"> 
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.css">     
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     </head>
     <script src="js/bootstrap.bundle.js"></script>
     <body>
@@ -30,14 +30,14 @@
                             <a id="links" class="nav-link" href="#">Portfolio</a>
                           </li>
                           <li class="nav-item">
-                              <a id="links" class="nav-link" href="#">Services</a>
+                              <a id="links" class="nav-link" href="#">Media Gallery</a>
                           </li>
                         </ul>
-                        <form class="d-flex position-relative" role="search">
+                        <form id="search-bar" class="d-flex position-relative" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-dark" type="submit">Search</button>
-                        </form>  
-                        <div class="nav-item dropdown">
+                        </form>
+                        <div id="profile-dd" class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img class="rounded-circle" src="images/pp.jpg" alt="">
                           </a>
@@ -50,23 +50,23 @@
                         </div>
                       </div>
                     </div>
-                  </nav>
-                  <!-- Navigation Bar -->
-              </header>
+                </nav>
+                <!-- Navigation Bar -->
+            </header>
               <!-- Header -->
               <!-- Main Content -->
                 <main class="container" id="main_content">
                     <!-- Promotional Banner -->
                     <section class="mt-5 p-5 bg-primary bg-opacity-25 text-black text-center rounded">
-                    <h1 class="tracking-in-contract">I'm Ariel Maniago</h1> 
+                    <h1 class="tracking-in-contract">I'm Ariel Maniago</h1>
                     <h4 class="tracking-in-contract">A Full Stack Developer</h4>
                     <button type="button" class="btn btn-outline-success tracking-in-contract"><i class="far fa-file-alt"></i> Download Resume</button>
                     </section>
                     <!-- List of Recent Portfolio -->
                     <section class="mt-0 p-5 rounded">
-                        <h3 class="underline_color">Latest Portfolio</h3>
-                        <div class="row">
-                            <div class="card col bg-transparent border-0">
+                        <h3 class="heading underline_color">Latest Portfolio</h3>
+                        <div id="portfolio-div" class="row">
+                            <div class="card col col-sm bg-transparent border-0">
                                 <div class="card-body">
                                     <h4 class="card-title">Music Player</h4>
                                     <!-- <a href="#">
@@ -81,7 +81,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card col bg-transparent border-0">
+                            <div class="card col col-sm bg-transparent border-0">
                                 <div class="card-body">
                                     <h4 class="card-title">Online Flower Shop</h4>
                                     <!-- <a href="#">
@@ -95,73 +95,47 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>      
+                            </div>
                     </section>
-                    <!-- Services -->
+                    <!-- Media Galleries -->
                     <section class="container container-md mt-0 p-5 bg-info bg-opacity-10">
-                        <h3 class="underline_color">Services Offered</h3>
-                        <div class="row">
-                            <div class="col-4">
-                                <div id="service_card" class="card">
-                                    <div class="card-body bg-success bg-opacity-50 rounded">
-                                      <h5 class="card-title underline-color">Responsive Web Designing</h5>
-                                      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                      <p class="card-text">It is a web development approach that creates dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view it.</p>
-                                      <p class="fst-italic">Tools Used: React, HTML and CSS3</p>
-                                      <div class="card-footer d-flex justify-content-between border-0">
-                                        <button type="button" class="btn btn-outline-dark">Subscibe</button>
-                                          <p class="card-text fs-5">&dollar;99</p>
-                                      </div>
-                                    </div>
+                        <h3 class="underline_color heading">Photo Gallery</h3>
+                        <div class="container">
+                            <div id="photo-gallerydiv" class="row">
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img src="images/mygf.jpg" class="figure-img img-fluid rounded" alt="...">
+                                        <figcaption class="figure-caption">Took a joyride moment with her.</figcaption>
+                                      </figure>
+                                </div>
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img src="images/guitar.jpg" class="figure-img img-fluid rounded" alt="...">
+                                        <figcaption class="figure-caption">Just for a jammed with myself and my acoustic guitar.</figcaption>
+                                      </figure>
+                                </div>
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img src="images/xrm.jpg" class="figure-img img-fluid rounded" alt="...">
+                                        <figcaption class="figure-caption">First ride on a year of 2023.</figcaption>
+                                      </figure>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div id="service_card" class="card">
-                                    <div class="card-body bg-success bg-opacity-50 rounded">
-                                      <h5 class="card-title underline_color">Multimedia Editing</h5>
-                                      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                      <p class="card-text">It includes films, video advertisements, same day video edit and television shows.</p>
-                                      <p class="fst-italic">Tools Used: Adobe Photoshop, Canva, Adobe After Effects & Adobe Premiere Pro</p>
-                                      <div class="card-footer d-flex justify-content-between border-0">
-                                        <button type="button" class="btn btn-outline-dark">Subscibe</button>
-                                          <p class="card-text fs-5">&dollar;99</p>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div id="service_card" class="card">
-                                    <div class="card-body bg-success bg-opacity-50 rounded">
-                                      <h5 class="card-title underline_color">Web Programming</h5>
-                                      <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                                      <p class="card-text">It includes debugging, server scripting and network security.</p>
-                                      <p class="fst-italic">Tools Used: PHP, Laravel, React, Laragon</p>
-                                      <div class="card-footer d-flex justify-content-between border-0">
-                                        <button type="button" class="btn btn-outline-dark ">Subscibe</button>
-                                          <p class="card-text fs-5">&dollar;99</p>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <button id="btn-gallery" type="button" class="btn btn-dark">Show more</button>
                         </div>
                     </section>
                     <!-- Recent Blog Post -->
                     <section class="mt-5">
-                        <h3 class="underline_color">Recent Blog Post</h3>
+                        <h3 class="underline_color heading">Recent Blog Post</h3>
                         <div class="row">
-                            <div class="col-4 rounded">
+                            <div class="col rounded">
                                 <h2>Coding is Challenging</h1>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non praesentium ipsam deleniti, explicabo unde quibusdam consequatur blanditiis dignissimos repellat, totam sapiente amet tenetur eius nihil doloremque maxime nesciunt? Amet, eius nisi. Culpa laboriosam ipsa ex. Tempora corporis delectus reprehenderit eos quibusdam unde aspernatur eaque assumenda ea blanditiis. Fugiat, nihil alias!</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                 <button type="button" class="btn btn-outline-dark">Read Here</button>
                             </div>
-                            <div class="col-4 rounded">
+                            <div class="col rounded">
                                 <h2>Coding is Challenging</h1>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non praesentium ipsam deleniti, explicabo unde quibusdam consequatur blanditiis dignissimos repellat, totam sapiente amet tenetur eius nihil doloremque maxime nesciunt? Amet, eius nisi. Culpa laboriosam ipsa ex. Tempora corporis delectus reprehenderit eos quibusdam unde aspernatur eaque assumenda ea blanditiis. Fugiat, nihil alias!</p>
-                                <button type="button" class="btn btn-outline-dark">Read Here</button>
-                            </div>
-                            <div class="col-4 rounded">
-                                <h2>Coding is Challenging</h1>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non praesentium ipsam deleniti, explicabo unde quibusdam consequatur blanditiis dignissimos repellat, totam sapiente amet tenetur eius nihil doloremque maxime nesciunt? Amet, eius nisi. Culpa laboriosam ipsa ex. Tempora corporis delectus reprehenderit eos quibusdam unde aspernatur eaque assumenda ea blanditiis. Fugiat, nihil alias!</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                                 <button type="button" class="btn btn-outline-dark">Read Here</button>
                             </div>
                         </div>
